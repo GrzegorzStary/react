@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Sidebar from './components/Sidebar';
+import StatefulGreeting from './components/StatefulGreeting';
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      <StatefulGreeting greeting="I am a statefull class component" name="Greg!"/>
     </div>
   );
 }
