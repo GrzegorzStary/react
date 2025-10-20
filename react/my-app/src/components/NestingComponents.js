@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import UserMessage from './UserMessage'
 import UserData from './UserData'
+import MethodsAsPropsParent from './MethodsAsPropsChild'
+import MethodsAsPropsChild from './MethodsAsPropsParent'
 
 export class NestingComponents extends Component {
 constructor(props) {
@@ -8,14 +10,15 @@ constructor(props) {
 
   this.state = {
      isLoaded: false,
-     isLoggedIn: false
+     isLoggedIn: true,
+     isLoggedOut: false
   }
 }
   render() {
     return (
       <div>
-        <UserData isLoaded={this.state.isLoaded} />
-        <UserMessage isLoggedIn={this.state.isLoggedIn} />
+        <MethodsAsPropsParent isLoaded={this.state.isLoaded} />
+        <MethodsAsPropsChild isLoggedIn={this.state.isLoggedIn} />
       </div>
     )
   }
