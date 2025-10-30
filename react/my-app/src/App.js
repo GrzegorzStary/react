@@ -11,11 +11,12 @@ import NavBarForm from './components/NavBarForm';
 import Sidebar from './components/Sidebar';
 import RenderingLists from "./components/RenderingLists";
 import LifeCyclesCWU from "./components/LifeCyclesCWU";
+import { SearchBar3 } from "./components/SearchBar3.js";
 
 function App() {
   return <div className="App">
-      <LifeCyclesCWU />
-    </div>;
+      <SearchBar3 />
+  </div>;
 }
 
 export default App;
