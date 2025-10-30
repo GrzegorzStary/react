@@ -10,11 +10,12 @@ import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 import NavBarForm from './components/NavBarForm';
 import Sidebar from './components/Sidebar';
 import RenderingLists from "./components/RenderingLists";
+import LifeCyclesCWU from "./components/LifeCyclesCWU";
 
 function App() {
   return <div className="App">
-      <RenderingLists />
-  </div>;
+      <LifeCyclesCWU />
+    </div>;
 }
 
 export default App;
